@@ -1,0 +1,133 @@
+/* 
+    Document   : style
+    Created on : Sep 26, 2012, 10:18:17 AM
+    Author     : timothyb
+    Description:
+        Base stylesheet
+*/
+
+root { 
+    display: block;
+}
+
+body {
+	font: 90% "Lucida Sans Unicode",sans-serif;
+	background-color: lightgray;
+}
+
+#header {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	
+	width: 100%;
+	height: 50px;
+
+	background-color: black;
+	color: white;
+	font-weight: bold;
+	overflow: hidden;
+	z-index: 100;
+
+	#nav {
+		list-style-type: none;
+		height: 100%;
+		width: 80%;
+		margin: 0 auto;
+		padding: 0;
+
+		li {
+			display: block;
+			position: relative;
+			top: 0px;
+			float: left;
+			height: 100%;
+
+			a {
+				display: block;
+				color: lightgrey;
+				text-decoration: none;
+
+				padding: 0px 20px;
+				line-height: 50px;
+
+				font-weight: bold;
+
+				&:hover {
+					background-color: gray;
+				}
+			}
+
+			a.selected {
+				background-color: #444;
+			}
+		}
+	}
+}
+
+#subhead {
+	position: fixed;
+	top: 50px;
+	left: 0px;
+	
+	width: 100%;
+	height: 40px;
+	
+	background-color: #333;
+	color: white;
+	font-weight: bold;
+	overflow: hidden;
+	z-index: 100;
+
+	#subnav {
+		list-style-type: none;
+		height: 100%;
+		width: 80%;
+		margin: 0 auto;
+		padding: 0;
+
+		li {
+			display: block;
+			position: relative;
+			top: 0px;
+			float: left;
+			height: 100%;
+
+			a {
+				display: block;
+				color: lightgrey;
+				text-decoration: none;
+
+				padding: 0px 20px;
+				line-height: 40px;
+
+				font-weight: bold;
+
+				&:hover {
+					background-color: gray;
+				}
+			}
+
+			a.selected {
+				background-color: #444;
+			}
+		}
+
+	}
+}
+
+#main {
+	width: 80%;
+	margin: 50px auto auto auto;
+
+	padding: 10px;
+
+	border-left: 1px solid lightgray;
+	border-right: 1px solid lightgray;
+
+	background-color: white;
+}
+
+#main.subnav {
+	margin: 90px auto auto auto;
+}

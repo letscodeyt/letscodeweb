@@ -1,0 +1,21 @@
+doctype 5
+html
+	head
+		title= title
+		
+		block stylesheets
+			link(rel='stylesheet', href='/stylesheets/style.css')
+
+		block scripts
+
+	body
+		block header-parent
+			block header
+				div#header
+					ul#nav
+						block nav
+							include includes/menu-top
+						br(style="clear: both")
+		block main
+			div#main
+				block content

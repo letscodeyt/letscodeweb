@@ -1,0 +1,12 @@
+extends layout
+
+block append header-parent
+	block subhead
+		div#subhead
+			ul#subnav
+				block subnav
+			br(style="clear: both")
+
+block main
+	div#main.subnav
+		block subnav-content

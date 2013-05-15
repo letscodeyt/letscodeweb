@@ -1,0 +1,11 @@
+extends layout-subnav
+
+block subnav
+	li.selected: a.selected(href="/derp") derp
+	li: a(href="/herp") herp
+
+block subnav-content
+	h1= title
+	p Welcome to #{title}
+	:markdown
+		And _then_ suddenly *markdown*!
